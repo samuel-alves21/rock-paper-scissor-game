@@ -1,0 +1,23 @@
+section.section-options {
+  display: flex;
+  justify-content: center;
+}
+
+div.div-options {
+  width: calc(7vw + 95px);
+}
+
+div.div-options > img {
+  transition: scale, 0.05s;
+  object-fit: cover;
+  width: 100%;
+}
+
+div.div-options > img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+div.div-options > img:focus {
+  color: blue;
+}

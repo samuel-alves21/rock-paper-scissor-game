@@ -1,0 +1,23 @@
+section.counter-container {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-evenly;
+  max-width: 1000px;
+}
+
+div.div-choice {
+  text-align: center;
+  font-size: calc(1vw + 10px);
+}
+
+div.wining {
+  color: rgb(135, 255, 135);
+}
+
+div.losing {
+  color: red;
+}
+
+p.p-choice {
+  color: #fcfcfc;
+}
