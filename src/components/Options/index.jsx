@@ -1,5 +1,6 @@
 import { useContext } from "react"
 import { Context } from "../../contexts/ResultsContext/"
+import { setResults } from "../../contexts/ResultsContext/actions"
 
 import { Paper } from "./Paper"
 import { Rock } from "./Rock"
@@ -11,7 +12,7 @@ export const Options = () => {
   const resultsContext = useContext(Context)
 
   const handleClick = (e) => {
-    resultsContext.dispatch({type: 'set results', payload: e.target.id})
+    setResults(resultsContext.dispatch, e.target.id)
   }
   return (
     <section className="section-options">
